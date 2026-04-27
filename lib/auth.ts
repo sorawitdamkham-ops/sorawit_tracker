@@ -3,7 +3,7 @@
 import { AuthOptions } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import {prisma} from "@/lib/prisma"
-import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"
 
 // Next.js ไม่อนุญาตให้ export อย่างอื่นนอกจาก Get Post ตอน deploy จึงจำเป็นต้องมาสร้างใน lib และ import ไปใช้ในไฟล์อื่นๆ
 // คือ [...nextauth]/route.ts
